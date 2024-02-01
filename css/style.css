@@ -146,6 +146,29 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 600px) {
+
+    nav {
+        /* Adjust the navigation bar styles for mobile */
+        padding: 0; /* Remove padding if needed */
+        /* ... other styles ... */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the links vertically */
+        padding: 0;
+    }
+
+    nav li {
+        width: 100%; /* Full width links for easier tapping on mobile */
+        text-align: center; /* Center text if the links are now vertical */
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+
+
     .logo-bar {
         top: auto;
         bottom: 0; /* Move logo bar to bottom on small screens */
