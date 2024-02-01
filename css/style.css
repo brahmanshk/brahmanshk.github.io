@@ -112,7 +112,8 @@ section {
 
 /* Section Headings */
 h1, h2, h3 {
-    color: #007bff; /* Color for headings */
+    /* color: #007bff; Color for headings */
+    color: #333232
     margin: 20px 0;
 }
 
