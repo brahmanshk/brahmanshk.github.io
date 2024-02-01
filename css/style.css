@@ -1,8 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
@@ -30,8 +32,31 @@ header nav ul li a {
 
 section {
     padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
 }
 
-#home {
-    background-color: #f2f2f2;
+#home, #contact {
+    background-color: #e7e7e7;
+}
+
+#about, #portfolio {
+    background-color: #d6eaf8;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Additional Styling for Portfolio Items and Contact Section */
+.portfolio-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-info, .contact-form {
+    margin-top: 20px;
 }
