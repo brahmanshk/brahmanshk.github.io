@@ -144,6 +144,20 @@ footer {
 
 
 
+
+
+.footer-logo {
+    max-width: 150px; /* Maximum width of the logo */
+    margin-bottom: 20px; /* Space between the logo and the text */
+}
+
+
+
+
+
+
+
+
 #home .home-content {
     display: flex;
     justify-content: space-between; /* This will put space between the text and the image */
