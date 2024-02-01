@@ -11,7 +11,7 @@ body, html {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0 20px; /* Adds spacing on both sides */
-    padding-top: 100px; /* Adjust this based on the total height of your fixed elements */
+    padding-top: 140px; /* Adjust this based on the total height of your fixed elements */
 }
 
 /* Fixed Navigation Bar Style */
