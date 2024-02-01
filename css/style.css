@@ -9,7 +9,7 @@ body, html {
     width: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding-top: 110px; /* Space for the fixed nav and logo bars */
+    padding-top: 120px; /* Adjust based on the total height of nav + logo bars */
 }
 
 /* Fixed Navigation Bar Style */
@@ -21,6 +21,10 @@ nav {
     left: 0;
     right: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Height of the nav bar */
 }
 
 nav ul {
@@ -28,8 +32,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0;
-    height: 50px; /* Height of the nav bar */
+    padding: 0;
     margin: 0;
 }
 
@@ -48,72 +51,79 @@ nav a:hover {
 }
 
 /* Fixed Logo Bar Style */
-
 .logo-bar {
-    background-color: #333; /* Dark background for the logo bar */
+    background-color: #333; /* Dark background for logo bar */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Adjust if needed */
     position: fixed;
-    top: 50px; /* Adjust according to the height of your navigation bar */
+    top: 50px; /* Adjust if nav bar height changes */
     left: 0;
     right: 0;
     z-index: 999;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    padding: 10px 0; /* Padding around logos */
 }
 
-
-
-.logo-bar a {
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 10px;
 }
 
-.logo-bar img {
-    height: 30px; /* Adjust the size of your logos as needed */
-    vertical-align: middle;
+.logo-item img {
+    margin-bottom: 5px; /* Space between logo and title */
+}
+
+.logo-item span {
+    color: white; /* Color of the title text */
+    font-size: 12px; /* Size of the title text */
+    text-align: center;
 }
 
 /* Main Content Style */
 main {
-    margin-top: 110px; /* Space for the fixed nav and logo bars */
-    text-align: center; /* Center text for the welcome message */
+    margin: 20px auto; /* Center the main content on the page */
+    max-width: 1200px; /* Maximum width of the main content */
+    padding: 20px;
 }
 
 section {
+    margin-bottom: 40px;
     padding: 20px;
-    margin: 20px auto; /* Center the sections */
-    max-width: 1200px; /* Maximum width of the sections */
     background-color: white;
     border-radius: 8px; /* Rounded corners for sections */
 }
 
 /* Section Headings */
 h1, h2, h3 {
-    color: #007bff; /* Example color for headings */
-    margin: 20px 0; /* Margin for spacing */
+    color: #007bff; /* Color for headings */
+    margin: 20px 0; /* Spacing around headings */
 }
 
 /* Responsive Design for smaller screens */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
-        height: auto;
-    }
-
-    nav li {
-        width: 100%;
     }
 
     .logo-bar {
         top: auto;
-        bottom: 0; /* Logo bar at the bottom for smaller screens */
+        bottom: 0; /* Position logo bar at the bottom on small screens */
+        flex-direction: row; /* Keep logos in a row */
+        flex-wrap: nowrap; /* Do not wrap logos */
+        overflow-x: auto; /* Enable horizontal scrolling for logos */
+        padding: 5px 0;
     }
 
-    .logo-bar img {
-        height: 20px; /* Smaller logos for smaller screens */
-    }
-
-    main {
-        margin-top: 50px; /* Reduced space for the fixed nav bar */
+    .logo-item {
+        margin: 0 5px;
     }
 }
+
+
+
+
+
+
