@@ -11,7 +11,7 @@ body, html {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0 20px; /* Adds spacing on both sides */
-    padding-top: 140px; /* Adjust this based on the total height of your fixed elements */
+    padding-top: 100px; /* Adjust this based on the total height of your fixed elements */
 }
 
 /* Fixed Navigation Bar Style */
@@ -26,7 +26,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Adjust if needed */
+    height: 60px; /* Adjust if needed */
 }
 
 nav ul {
@@ -59,7 +59,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 50px; /* Position below the navigation bar */
+    top: 60px; /* Position below the navigation bar */
     left: 0;
     right: 0;
     z-index: 999;
@@ -67,7 +67,7 @@ nav a:hover {
     padding: 20px 0;
     margin-bottom: 0; /* Set to zero or an appropriate value */
     padding-bottom: 0; /* Set to zero if needed */
-    height: 120px; /* Adjust if needed */
+    height: 100px; /* Adjust if needed */
 
 }
 
