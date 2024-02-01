@@ -107,6 +107,28 @@ h1, h2, h3 {
     margin: 20px 0;
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #0af;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .logo-bar {
