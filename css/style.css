@@ -9,7 +9,7 @@ body, html {
     width: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding-top: 120px; /* Adjust based on the total height of nav + logo bars */
+    padding-top: 120px; /* Adjust this based on the total height of your fixed elements */
 }
 
 /* Fixed Navigation Bar Style */
@@ -24,7 +24,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Height of the nav bar */
+    height: 50px; /* Adjust if needed */
 }
 
 nav ul {
@@ -57,34 +57,35 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 50px; /* Adjust if nav bar height changes */
+    top: 50px; /* Position below the navigation bar */
     left: 0;
     right: 0;
     z-index: 999;
-    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
-    padding: 10px 0; /* Padding around logos */
+    flex-wrap: wrap; /* Wrap logos on smaller screens */
+    padding: 10px 0;
 }
 
-.logo-item {
+.logo-bar a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
+    text-decoration: none;
+    color: white; /* Color for the title text */
+    margin: 0 15px;
 }
 
-.logo-item img {
+.logo-bar img {
     margin-bottom: 5px; /* Space between logo and title */
 }
 
-.logo-item span {
-    color: white; /* Color of the title text */
-    font-size: 12px; /* Size of the title text */
+.logo-title, .logo-bar a div {
+    font-size: 12px; /* Size for the title text */
     text-align: center;
 }
 
 /* Main Content Style */
 main {
-    margin: 20px auto; /* Center the main content on the page */
+    margin: 20px auto;
     max-width: 1200px; /* Maximum width of the main content */
     padding: 20px;
 }
@@ -93,37 +94,24 @@ section {
     margin-bottom: 40px;
     padding: 20px;
     background-color: white;
-    border-radius: 8px; /* Rounded corners for sections */
+    border-radius: 8px; /* Rounded corners */
 }
 
 /* Section Headings */
 h1, h2, h3 {
     color: #007bff; /* Color for headings */
-    margin: 20px 0; /* Spacing around headings */
+    margin: 20px 0;
 }
 
-/* Responsive Design for smaller screens */
+/* Responsive Design */
 @media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
     .logo-bar {
         top: auto;
-        bottom: 0; /* Position logo bar at the bottom on small screens */
-        flex-direction: row; /* Keep logos in a row */
-        flex-wrap: nowrap; /* Do not wrap logos */
-        overflow-x: auto; /* Enable horizontal scrolling for logos */
+        bottom: 0; /* Move logo bar to bottom on small screens */
         padding: 5px 0;
     }
 
-    .logo-item {
-        margin: 0 5px;
+    .logo-bar a {
+        margin: 5px; /* Adjust margins for smaller screens */
     }
 }
-
-
-
-
-
-
