@@ -142,8 +142,7 @@ footer {
 }
 
 .footer-logo {
-    width: 150px; /* Set the width of your logo */
-    height: auto; /* Set the height to 'auto' to maintain aspect ratio */
+    max-width: 150px; /* Maximum width of the logo */
     margin-bottom: 20px; /* Space between the logo and the text */
 }
 
