@@ -63,7 +63,7 @@ nav a:hover {
     right: 0;
     z-index: 999;
     flex-wrap: wrap; /* Wrap logos on smaller screens */
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .logo-bar a {
