@@ -1,10 +1,11 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0 10%; /* Adding padding to the sides */
+    padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4;
     color: #333;
+    padding-top: 60px; /* Space for fixed header */
 }
 
 header {
@@ -12,39 +13,40 @@ header {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed; /* Fixes the header at the top */
+    position: fixed; /* Fixed at top */
     top: 0;
-    width: 80%; /* Adjusts the width to match the body padding */
-    left: 10%; /* Aligns with the body's left padding */
-    z-index: 1000; /* Ensures the header stays above other content */
-}
-
-/* Clears space at the top so the first section is not hidden behind the fixed header */
-body::before {
-    content: '';
-    display: block;
-    height: 60px; /* Adjust this value based on the header's height */
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 20px; /* Spacing between nav items */
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ddd; /* Color change on hover */
 }
 
 section {
+    margin: 20px 10%; /* Margin for top and bottom, padding for left and right */
     padding: 20px;
-    margin-top: 20px;
     border-radius: 8px;
 }
 
@@ -60,7 +62,6 @@ h1, h2 {
     color: #333;
 }
 
-/* Additional Styling for Portfolio Items and Contact Section */
 .portfolio-item {
     background-color: white;
     padding: 10px;
