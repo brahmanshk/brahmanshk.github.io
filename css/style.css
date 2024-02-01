@@ -9,17 +9,17 @@ body, html {
     width: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding-top: 100px; /* Adjust this value to fit the nav and logo bars */
 }
 
-/* Navigation Bar Style */
+/* Fixed Navigation Bar Style */
 nav {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a; /* Dark background for nav bar */
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 nav ul {
@@ -29,10 +29,11 @@ nav ul {
     align-items: center;
     padding-left: 0;
     height: 50px; /* Height of the nav bar */
+    margin: 0;
 }
 
 nav li {
-    margin: 0 15px;
+    padding: 0 15px;
 }
 
 nav a {
@@ -45,7 +46,7 @@ nav a:hover {
     background-color: #0d0d0d;
 }
 
-/* Logo Bar Style */
+/* Fixed Logo Bar Style */
 .logo-bar {
     background-color: #333;
     overflow: hidden;
@@ -54,8 +55,10 @@ nav a:hover {
     align-items: center;
     height: 50px; /* Height of the logo bar */
     position: fixed;
-    top: 50px; /* Position below the nav bar */
-    width: 100%;
+    top: 50px; /* Below the nav bar */
+    left: 0;
+    right: 0;
+    z-index: 9;
 }
 
 .logo-bar a {
@@ -69,19 +72,28 @@ nav a:hover {
 
 /* Main Content Style */
 main {
-    margin: 0 10%; /* Margins to the side of the page */
-    text-align: center; /* Centers text */
+    margin-top: 100px; /* Space for the fixed nav and logo bars */
 }
 
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: white;
+/* Welcome Message Style */
+.welcome-message {
+    text-align: center; /* Centers the welcome message */
+    padding: 50px 0; /* Padding for spacing */
+    margin: 0 10%; /* Side margins */
 }
 
 /* Section Headings */
 h1, h2, h3 {
     color: #007bff; /* Example color for headings */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners for sections */
 }
 
 /* Responsive Design for smaller screens */
@@ -91,13 +103,20 @@ h1, h2, h3 {
         height: auto;
     }
 
+    nav li {
+        width: 100%;
+    }
+
     .logo-bar {
         top: auto;
         bottom: 0; /* Logo bar at the bottom for smaller screens */
-        height: auto;
     }
 
-    .logo-bar a {
-        margin: 5px 0; /* Stack logos vertically with space between */
+    .logo-bar img {
+        height: 20px; /* Smaller logos for smaller screens */
+    }
+
+    .welcome-message {
+        padding: 20px 0; /* Less padding for smaller screens */
     }
 }
