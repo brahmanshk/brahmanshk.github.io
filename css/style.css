@@ -67,6 +67,7 @@ nav a:hover {
     padding: 20px 0;
     margin-bottom: 0; /* Set to zero or an appropriate value */
     padding-bottom: 0; /* Set to zero if needed */
+    height: 120px; /* Adjust if needed */
 
 }
 
