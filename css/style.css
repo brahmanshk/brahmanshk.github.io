@@ -64,6 +64,8 @@ nav a:hover {
     z-index: 999;
     flex-wrap: wrap; /* Wrap logos on smaller screens */
     padding: 20px 0;
+    margin-bottom: 0; /* Set to zero or an appropriate value */
+
 }
 
 .logo-bar a {
@@ -113,7 +115,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: relative; /* or 'fixed' if you want it to always be at the bottom */
+    position: fixed; /* or 'fixed' if you want it to always be at the bottom */
     border-top: 1px solid #4a4a4a; /* Optional: if you want a border like the nav bar */
     left: 0; /* Aligns the footer to the left edge of the screen */
     bottom: 0; /* Aligns the footer to the bottom edge if 'fixed' */
