@@ -90,9 +90,9 @@ nav a:hover {
 main {
     margin: 20px auto;
     max-width: 1200px; /* Maximum width of the main content */
-    margin-top: 0;
-    padding-top: 100px;
     padding: 20px;
+    margin-top: 0; /* Set to zero or an appropriate value */
+    padding-top: 0; /* If padding is causing the space */
 }
 
 section {
