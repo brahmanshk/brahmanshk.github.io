@@ -54,16 +54,13 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Adjust if needed */
+    height: 100px; /* Adjust if needed */
     position: fixed;
     top: 50px; /* Adjust according to the height of your navigation bar */
     left: 0;
     right: 0;
     z-index: 999;
 }
-
-
-
 
 
 
