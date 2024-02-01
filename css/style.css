@@ -48,18 +48,24 @@ nav a:hover {
 }
 
 /* Fixed Logo Bar Style */
+
 .logo-bar {
-    background-color: #333; /* Dark background for logo bar */
+    background-color: #333; /* Dark background for the logo bar */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Height of the logo bar */
+    height: 50px; /* Adjust if needed */
     position: fixed;
-    top: 50px; /* Below the nav bar */
+    top: 50px; /* Adjust according to the height of your navigation bar */
     left: 0;
     right: 0;
     z-index: 999;
 }
+
+
+
+
+
 
 .logo-bar a {
     margin: 0 10px;
