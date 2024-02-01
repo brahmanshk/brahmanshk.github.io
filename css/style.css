@@ -9,7 +9,7 @@ body, html {
     width: 100%;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding-top: 100px; /* Space for the fixed nav and logo bars */
+    padding-top: 110px; /* Space for the fixed nav and logo bars */
 }
 
 /* Fixed Navigation Bar Style */
@@ -72,7 +72,7 @@ nav a:hover {
 
 /* Main Content Style */
 main {
-    margin-top: 100px; /* Space for the fixed nav and logo bars */
+    margin-top: 110px; /* Space for the fixed nav and logo bars */
     text-align: center; /* Center text for the welcome message */
 }
 
