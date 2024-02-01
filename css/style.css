@@ -97,6 +97,7 @@ main {
 }
 
 section {
+    margin-top: 10px;
     margin-bottom: 40px;
     padding: 20px;
     background-color: white;
