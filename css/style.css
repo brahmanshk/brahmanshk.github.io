@@ -65,6 +65,7 @@ nav a:hover {
     flex-wrap: wrap; /* Wrap logos on smaller screens */
     padding: 20px 0;
     margin-bottom: 0; /* Set to zero or an appropriate value */
+    padding-bottom: 0; /* Set to zero if needed */
 
 }
 
