@@ -149,7 +149,8 @@ footer {
 
     nav {
         /* Adjust the navigation bar styles for mobile */
-        padding: 0; /* Remove padding if needed */
+        padding: 0;
+        overflow-x: auto; /* Remove padding if needed */
         /* ... other styles ... */
     }
 
@@ -159,8 +160,10 @@ footer {
     }
 
     nav li {
-        width: 100%; /* Full width links for easier tapping on mobile */
-        text-align: center; /* Center text if the links are now vertical */
+
+        justify-content: flex-start;
+        /* width: 100%; /* Full width links for easier tapping on mobile */
+        /*text-align: center; Center text if the links are now vertical */
     }
 
     nav a {
