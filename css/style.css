@@ -157,7 +157,7 @@ footer {
 }
 
 #home .image-content {
-    width: 300%;
+    width: 30%;
     flex: 1; /* This will allow the image content to grow and shrink as needed */
     display: flex;
     justify-content: flex-end; /* This will align the image to the right */
@@ -207,5 +207,22 @@ footer {
 
     .logo-bar a {
         margin: 5px; /* Adjust margins for smaller screens */
+    }
+}
+
+
+@media (max-width: 600px) {
+    #home .home-content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    #home .text-content,
+    #home .image-content {
+        width: 100%; /* Each takes full width */
+    }
+
+    #home .image-content {
+        justify-content: center; /* Center the image */
+        margin-top: 20px; /* Add some space between the text and image */
     }
 }
