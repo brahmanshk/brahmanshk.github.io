@@ -151,11 +151,13 @@ footer {
 }
 
 #home .text-content {
+    width: 70%;
     flex: 1; /* This will allow the text content to grow and shrink as needed */
     padding-right: 20px; /* This adds some space between the text and the image */
 }
 
 #home .image-content {
+    width: 300%;
     flex: 1; /* This will allow the image content to grow and shrink as needed */
     display: flex;
     justify-content: flex-end; /* This will align the image to the right */
