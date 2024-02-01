@@ -144,6 +144,31 @@ footer {
 
 
 
+#home .home-content {
+    display: flex;
+    justify-content: space-between; /* This will put space between the text and the image */
+    align-items: center; /* This will vertically align the text and image if they have different heights */
+}
+
+#home .text-content {
+    flex: 1; /* This will allow the text content to grow and shrink as needed */
+    padding-right: 20px; /* This adds some space between the text and the image */
+}
+
+#home .image-content {
+    flex: 1; /* This will allow the image content to grow and shrink as needed */
+    display: flex;
+    justify-content: flex-end; /* This will align the image to the right */
+}
+
+#home img {
+    max-width: 100%; /* This will make sure the image is responsive and does not overflow its container */
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+
+
+
+
 /* Responsive Design */
 @media (max-width: 600px) {
 
