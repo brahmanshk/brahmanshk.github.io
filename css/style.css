@@ -141,11 +141,6 @@ footer {
     text-decoration: underline;
 }
 
-
-
-
-
-
 .footer-logo {
     max-width: 150px; /* Maximum width of the logo */
     margin-bottom: 20px; /* Space between the logo and the text */
@@ -158,32 +153,27 @@ footer {
 
 
 
-#home .home-content {
+#home .home-container {
     display: flex;
-    justify-content: space-between; /* This will put space between the text and the image */
-    align-items: stretch; /* This will vertically align the text and image if they have different heights */
+    align-items: center;
+    justify-content: space-between;
 }
 
-#home .text-content {
-    width: 70%;
-    flex: 1; /* This will allow the text content to grow and shrink as needed */
-    padding-right: 20px; /* This adds some space between the text and the image */
+#home .text-container {
+    flex-grow: 1;
 }
 
-#home .image-content {
-    width: 30%;
-    flex: 1; /* This will allow the image content to grow and shrink as needed */
+#home .image-container {
+    flex-grow: 1;
     display: flex;
-    justify-content: flex-end; /* This will align the image to the right */
+    justify-content: center;
+    align-items: center;
 }
 
-#home img {
-    display: block; /* Removes bottom space associated with inline elements */
-    height: 200px; /* Manually set the height */
-    width: auto; /* Scales the width to maintain the aspect ratio */
-    max-width: 100%; /* Ensures the image is not wider than its container */
+#home .image-container img {
+    height: 100%; /* Adjust the height to match the text-container height */
+    width: auto; /* Maintain the aspect ratio of the image */
 }
-
 
 
 
