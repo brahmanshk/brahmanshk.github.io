@@ -88,6 +88,8 @@ nav a:hover {
 main {
     margin: 20px auto;
     max-width: 1200px; /* Maximum width of the main content */
+    margin-top: 0;
+    padding-top: 100px;
     padding: 20px;
 }
 
