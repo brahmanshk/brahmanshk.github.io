@@ -116,7 +116,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: fixed; /* or 'fixed' if you want it to always be at the bottom */
+    position: relative; /* or 'fixed' if you want it to always be at the bottom */
     border-top: 1px solid #4a4a4a; /* Optional: if you want a border like the nav bar */
     left: 0; /* Aligns the footer to the left edge of the screen */
     bottom: 0; /* Aligns the footer to the bottom edge if 'fixed' */
